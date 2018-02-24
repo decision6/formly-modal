@@ -1,0 +1,11 @@
+{
+  "name": "@decision6/modal-form",
+  "version": "1.0.0",
+  "main": "dist/modal-form.js",
+  "author": "D6 Team <tecnologia@decision6.com>",
+  "description": "A wrapper for Quasar Modal by using QFormly component",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "license": "MIT"
+}
