@@ -1,0 +1,27 @@
+.formly-modal .modal-content {
+  width: 100%;
+}
+
+@media screen and (min-width: 800px) {
+  .formly-modal-sm .modal-content {
+    min-width: 400px;
+  }
+
+  .formly-modal-lg .modal-content {
+    min-width: 600px;
+  }
+
+  .formly-modal-xlg .modal-content {
+    min-width: 900px;
+  }
+
+  .formly-modal-2xlg .modal-content {
+    min-width: 1100px;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .formly-modal .modal-content {
+    min-width: 100%;
+  }
+}
