@@ -2,13 +2,6 @@
 # yarn lockfile v1
 
 
-"@decision6/q-formly@^2.0.0":
-  version "2.0.0"
-  resolved "https://registry.yarnpkg.com/@decision6/q-formly/-/q-formly-2.0.0.tgz#bc27bd96a4f994ad22f9b3b0531618ba19e3e723"
-  dependencies:
-    "@decision6/vue-formly-quasar" "^2.1.0"
-    lodash "^4.17.4"
-
 "@decision6/vue-formly-quasar@^2.1.0":
   version "2.1.0"
   resolved "https://registry.yarnpkg.com/@decision6/vue-formly-quasar/-/vue-formly-quasar-2.1.0.tgz#4d6f441ef709593acdd0df17c7191d8ca953f41a"
