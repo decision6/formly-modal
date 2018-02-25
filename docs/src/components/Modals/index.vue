@@ -50,7 +50,7 @@
     }),
     methods: {
       onSave (fn) {
-        this.setTimeout(() => {
+        setTimeout(() => {
           Dialog.create({
             title: 'Saved'
           })

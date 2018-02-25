@@ -54,16 +54,13 @@ export default {
       return `modal-${this.size}`
     },
     isLoading () {
-      return false
-    },
-    onSave () {
       return this.loading
     },
     isFormValid () {
       return this.form.$valid
     },
     isDisable () {
-      return !this.isFormValid || this.onSave
+      return !this.isFormValid || this.isLoading
     }
   },
   watch: {
