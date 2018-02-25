@@ -7,10 +7,15 @@ const TitleWrapper = (h, context) => {
   const saveBtnProps = {
     props: {
       color: 'negative',
-      disable: true
+      disable: context.isDisable
     },
     style: {
       padding: '0 16px'
+    },
+    on: {
+      click () {
+        context.save()
+      }
     }
   }
   const closeBtnProps = {

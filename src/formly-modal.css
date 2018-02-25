@@ -2,6 +2,12 @@
   width: 100%;
 }
 
+.formly-modal fieldset {
+  border: 0;
+  padding: 0;
+  margin: 0;
+}
+
 @media screen and (min-width: 800px) {
   .formly-modal-sm .modal-content {
     min-width: 400px;

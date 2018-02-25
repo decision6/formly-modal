@@ -1,5 +1,5 @@
 import { QModalLayout, QContextMenu } from 'quasar-framework'
-import { includes } from 'lodash'
+import { includes, isFunction } from 'lodash'
 import { WrapperModal } from './components'
 
 const widthObjs = {
@@ -39,7 +39,9 @@ export default {
     }
   },
   data: () => ({
-    form: {}
+    form: {},
+    internalModel: {},
+    loading: false
   }),
   computed: {
     contentCss() {
@@ -50,6 +52,26 @@ export default {
     },
     classModal() {
       return `modal-${this.size}`
+    },
+    isLoading () {
+      return false
+    },
+    onSave () {
+      return this.loading
+    },
+    isFormValid () {
+      return this.form.$valid
+    },
+    isDisable () {
+      return !this.isFormValid || this.onSave
+    }
+  },
+  watch: {
+    internalModel: {
+      handler (value) {
+        this.updateModel(value)
+      },
+      deep: true
     }
   },
   methods: {
@@ -65,7 +87,19 @@ export default {
       document.body.style.paddingRight = '0px'
       document.body.classList.remove('with-modal')
       this.$emit('app:close-modal')
+    },
+    save () {
+      this.loading = true
+      this.$emit('save', () => {
+        this.loading = false
+      })
+    },
+    updateModel (value) {
+      this.$emit('update:model', Object.assign({}, value))
     }
+  },
+  mounted () {
+    this.internalModel = Object.assign({}, this.model)
   },
   render(h) {
     const dataProps = {
