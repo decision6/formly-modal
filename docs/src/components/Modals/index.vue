@@ -67,6 +67,7 @@
       ref="modal"
       title="Example form"
       size="lg"
+      toolbarColor="indigo-10"
       :height="400"
       :model.sync="model"
       :fields="fields"
