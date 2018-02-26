@@ -12,6 +12,7 @@ export default {
   mixins: [ ModalProps, ModalComputeds, ModalMethods ],
   data: () => ({
     form: {},
+    formGroups: [],
     internalModel: {},
     loading: false
   }),

@@ -1,3 +1,5 @@
+import { isEmpty } from 'lodash'
+
 /**
  * @type Object
 */
@@ -23,13 +25,19 @@ export default {
       return `modal-${this.size}`
     },
     isLoading() {
-      return this.loading
+      return this.loading || this.forceLoading
     },
     isFormValid() {
+      if (this.isMulticolumns) {
+        return this.formGroups.every(item => item.$valid || false)
+      }
       return this.form.$valid
     },
     isDisable() {
       return !this.isFormValid || this.isLoading
+    },
+    isMulticolumns () {
+      return !isEmpty(this.fieldsGroup)
     }
   }
 }

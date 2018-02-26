@@ -5,6 +5,10 @@ import { includes } from 'lodash'
  */
 export default {
   props: {
+    forceLoading: {
+      type: Boolean,
+      default: false
+    },
     model: {
       type: Object,
       default: () => ({}),
@@ -12,8 +16,11 @@ export default {
     },
     fields: {
       type: Array,
-      default: () => [],
-      required: true
+      default: () => []
+    },
+    fieldsGroup: {
+      type: Array,
+      default: () => []
     },
     title: {
       type: String,
