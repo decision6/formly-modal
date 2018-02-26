@@ -1,6 +1,7 @@
 <script>
   import { QBtn, Dialog } from 'quasar-framework'
   import FormlyModal from 'formly-modal'
+  import multicolumnFormly from './config/multicolumns-formly'
 
   export default {
     name: 'modals',
@@ -46,7 +47,10 @@
             }
           }
         }
-      ]
+      ],
+      multicolumn: {
+        ...multicolumnFormly
+      }
     }),
     methods: {
       onSave (fn) {
@@ -73,7 +77,18 @@
       :fields="fields"
       @save="onSave" />
 
+      <FormlyModal
+        ref="mulcolumnModal"
+        title="Multicolumn example form"
+        size="xlg"
+        toolbarColor="indigo-10"
+        :model.sync="multicolumn.model"
+        :fieldsGroup="multicolumn.fieldsGroups"
+        @save="onSave" />
+
     <QBtn @click="$refs.modal.open()"> Abrir modal </QBtn>
+
+    <QBtn @click="$refs.mulcolumnModal.open()"> Abrir multicolumn modal </QBtn>
   </div>
 </template>
 
