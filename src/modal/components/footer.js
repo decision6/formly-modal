@@ -2,7 +2,8 @@ import { QToolbar, QToolbarTitle, QBtn, QIcon } from 'quasar-framework'
 
 const TitleWrapper = (h, context) => {
   const toolbarProps = {
-    slot: 'footer'
+    slot: 'footer',
+    color: context.toolbarColor
   }
   const saveBtnProps = {
     props: {

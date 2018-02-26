@@ -5,7 +5,15 @@ import FormWrapper from './form'
 import FormlyWrapper from './form';
 
 const LayoutWrapper = (h, context) => {
-  return h(QModalLayout, [
+  const classColor = `bg-${context.toolbarColor}`
+  const layoutProps = {
+    props: {
+      'header-class': classColor,
+      'footer-class': classColor
+    }
+  }
+
+  return h(QModalLayout, layoutProps, [
     TitleWrapper(h, context),
     FormlyWrapper(h, context),
     FooterWrapper(h, context)

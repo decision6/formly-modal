@@ -2,6 +2,10 @@
   width: 100%;
 }
 
+.formly-modal .q-toolbar {
+  background: none;
+}
+
 .formly-modal fieldset {
   border: 0;
   padding: 0;

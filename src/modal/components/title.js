@@ -2,7 +2,8 @@ import { QToolbar, QToolbarTitle, QBtn, QIcon } from 'quasar-framework'
 
 const TitleWrapper = (h, context) => {
   const toolbarProps = {
-    slot: 'header'
+    slot: 'header',
+    color: context.toolbarColor
   }
 
   const buttonProps = {
@@ -23,10 +24,10 @@ const TitleWrapper = (h, context) => {
   }
 
   return h(QToolbar, toolbarProps, [
+    h(QToolbarTitle, context.title),
     h(QBtn, buttonProps, [
       h(QIcon, iconProps)
-    ]),
-    h(QToolbarTitle, context.title)
+    ])
   ])
 }
 
