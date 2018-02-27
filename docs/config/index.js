@@ -8,7 +8,7 @@ module.exports = {
     assets: path.resolve(__dirname, '../src/assets'),
     '@': path.resolve(__dirname, '../src/components'),
     variables: path.resolve(__dirname, '../src/themes/quasar.variables.styl'),
-    'formly-modal': path.resolve(__dirname, '../../src')
+    'formly-modal': path.resolve(__dirname, '../../')
   },
 
   // Progress Bar Webpack plugin format

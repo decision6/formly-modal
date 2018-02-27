@@ -15,7 +15,7 @@ import Quasar from 'quasar'
 import router from './router'
 import VueFormly from 'vue-formly'
 import VueFormlyQuasar from '@decision6/vue-formly-quasar'
-import 'formly-modal/formly-modal.css'
+import 'formly-modal/dist/formly-modal.css'
 
 Vue.config.productionTip = false
 Vue.use(Quasar) // Install Quasar Framework
