@@ -29,7 +29,7 @@ export default {
     },
     isFormValid() {
       if (this.isMulticolumns) {
-        return this.formGroups.every(item => item.$valid || false)
+        return this.formGroups.every(item => item.$valid === true)
       }
       return this.form.$valid
     },

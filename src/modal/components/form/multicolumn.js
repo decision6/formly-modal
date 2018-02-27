@@ -14,7 +14,7 @@ const factoryChildren = curry((h, context, acc, child, index) => {
     },
     on: {
       'update-form' (value) {
-        context.formGroups[index] = value
+        context.formGroups.splice(index, 1, value)
       }
     }
   }
