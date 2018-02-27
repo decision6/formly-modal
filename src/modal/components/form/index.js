@@ -24,14 +24,8 @@ const FormlyWrapper = (h, context) => {
     }
   }
 
-  const divProps = {
-    style: {
-      padding: '8px'
-    }
-  }
-
   if (context.isMulticolumns) {
-    return h('div', divProps, [
+    return h('div', [
       MulticolumnWrapper(h, context),
       h(QInnerLoading, loadingProps, [
         h(QSpinnerDots, spinnerProps)
@@ -39,7 +33,7 @@ const FormlyWrapper = (h, context) => {
     ])
   }
 
-  return h('div', divProps, [
+  return h('div', [
     Formly(h, formProps),
     h(QInnerLoading, loadingProps, [
       h(QSpinnerDots, spinnerProps)

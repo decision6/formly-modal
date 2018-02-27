@@ -11,10 +11,16 @@ const LayoutWrapper = (h, context) => {
       'footer-class': classColor
     }
   }
+  const divProps = {
+    style: { padding: '8px' }
+  }
 
   return h(QModalLayout, layoutProps, [
     TitleWrapper(h, context),
-    FormlyWrapper(h, context),
+    h('div', divProps, [
+      FormlyWrapper(h, context),
+      context.$slots.default
+    ]),
     FooterWrapper(h, context)
   ])
 }
