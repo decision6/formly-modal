@@ -19,7 +19,7 @@ export default {
     },
     color: {
       type: String,
-      default: 'primary'
+      default: 'faded'
     },
     fields: {
       type: Array,
