@@ -86,9 +86,9 @@
         :fieldsGroup="multicolumn.fieldsGroups"
         @save="onSave" />
 
-    <QBtn @click="$refs.modal.open()"> Abrir modal </QBtn>
+    <QBtn @click="$refs.modal.open()"> Open modal </QBtn>
 
-    <QBtn @click="$refs.mulcolumnModal.open()"> Abrir multicolumn modal </QBtn>
+    <QBtn @click="$refs.mulcolumnModal.open()"> Open multicolumn modal </QBtn>
   </div>
 </template>
 
