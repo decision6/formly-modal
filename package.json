@@ -1,11 +1,15 @@
 {
-  "name": "@decision6/modal-form",
+  "name": "@decision6/formly-modal",
   "version": "1.0.0",
-  "main": "dist/modal-form.js",
+  "main": "dist/formly-modal.js",
   "author": "D6 Team <tecnologia@decision6.com>",
   "description": "A wrapper for Quasar Modal by using QFormly component",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "prepare": "npm run lint; rm -rf dist && npm run build",
+    "build": "npm run lint; webpack",
+    "docs:build": "cd docs; npm run build",
+    "docs:deploy": "cd docs; npm run build; npm run deploy",
+    "lint": "eslint --ext .js,.vue src"
   },
   "license": "MIT",
   "peerDependencies": {
@@ -13,17 +17,26 @@
     "vue": "^2.5.0"
   },
   "dependencies": {
-    "lodash": "^4.17.4",
-    "@decision6/q-formly": "^2.0.0"
+    "@decision6/q-formly": "^2.0.0",
+    "lodash": "^4.17.4"
   },
   "devDependencies": {
     "babel-core": "^6.26.0",
+    "babel-eslint": "^8.2.2",
     "babel-loader": "^7.1.2",
     "babel-plugin-syntax-object-rest-spread": "^6.13.0",
     "babel-plugin-transform-object-rest-spread": "^6.26.0",
     "babel-preset-env": "^1.6.1",
     "css-loader": "^0.28.10",
+    "eslint": "^4.18.1",
+    "eslint-config-standard": "^11.0.0",
+    "eslint-friendly-formatter": "^3.0.0",
     "eslint-loader": "^1.9.0",
+    "eslint-plugin-html": "^4.0.2",
+    "eslint-plugin-import": "^2.9.0",
+    "eslint-plugin-node": "^6.0.1",
+    "eslint-plugin-promise": "^3.6.0",
+    "eslint-plugin-standard": "^3.0.1",
     "quasar-framework": "^0.14.9",
     "vue": "^2.5.13",
     "vue-loader": "^13.0.4",

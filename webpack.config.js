@@ -18,6 +18,10 @@ const common = {
       {
         test: /\.vue$/,
         loader: 'vue-loader'
+      },
+      {
+        test: /\.css$/,
+        loader: 'css-loader'
       }
     ]
   },
@@ -43,8 +47,8 @@ module.exports = [
     entry: path.resolve(__dirname, 'src/index'),
     output: {
       path: path.resolve(__dirname, 'dist'),
-      filename: 'modal-form.js',
-      library: 'QFormly',
+      filename: 'formly-modal.js',
+      library: 'FormlyModal',
       libraryTarget: 'umd'
     },
     module: common.module,
@@ -62,8 +66,8 @@ module.exports = [
     entry: path.resolve(__dirname, 'src/index'),
     output: {
       path: path.resolve(__dirname, 'dist'),
-      filename: 'modal-form.min.js',
-      library: 'QFormly',
+      filename: 'formly-modal.min.js',
+      library: 'FormlyModal',
       libraryTarget: 'umd'
     },
     module: common.module,
