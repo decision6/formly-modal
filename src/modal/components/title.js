@@ -11,7 +11,7 @@ const TitleWrapper = (h, context) => {
       flat: true
     },
     on: {
-      click() {
+      click () {
         context.close()
       }
     }

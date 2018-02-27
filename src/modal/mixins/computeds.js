@@ -15,25 +15,25 @@ const widthObjs = {
  */
 export default {
   computed: {
-    contentCss() {
+    contentCss () {
       return {
         'max-width': widthObjs[this.size],
         'min-height': `${this.height}px`
       }
     },
-    classModal() {
+    classModal () {
       return `modal-${this.size}`
     },
-    isLoading() {
+    isLoading () {
       return this.loading || this.forceLoading
     },
-    isFormValid() {
+    isFormValid () {
       if (this.isMulticolumns) {
         return this.formGroups.every(item => item.$valid === true)
       }
       return this.form.$valid
     },
-    isDisable() {
+    isDisable () {
       return !this.isFormValid || this.isLoading
     },
     isMulticolumns () {

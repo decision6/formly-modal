@@ -1,5 +1,3 @@
-import { QModalLayout, QContextMenu } from 'quasar-framework'
-import { isFunction } from 'lodash'
 import { WrapperModal } from './components'
 import {
   ModalProps,
@@ -27,7 +25,7 @@ export default {
   mounted () {
     this.internalModel = Object.assign({}, this.model)
   },
-  render(h) {
+  render (h) {
     const dataProps = {
       ref: 'modal',
       attrs: {

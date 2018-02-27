@@ -30,7 +30,7 @@ export default {
     size: {
       type: String,
       default: 'sm',
-      validator(value) {
+      validator (value) {
         return includes(['sm', 'lg', 'xlg', '2xlg'], value)
       }
     },

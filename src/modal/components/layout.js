@@ -1,8 +1,7 @@
 import { QModalLayout } from 'quasar-framework'
 import TitleWrapper from './title'
 import FooterWrapper from './footer'
-import FormWrapper from './form'
-import FormlyWrapper from './form';
+import FormlyWrapper from './form'
 
 const LayoutWrapper = (h, context) => {
   const classColor = `bg-${context.toolbarColor}`
