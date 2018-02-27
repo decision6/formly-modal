@@ -12,6 +12,7 @@ export default {
     form: {},
     formGroups: [],
     internalModel: {},
+    internalModelBkp: {},
     loading: false
   }),
   watch: {
@@ -24,6 +25,7 @@ export default {
   },
   mounted () {
     this.internalModel = Object.assign({}, this.model)
+    this.internalModelBkp = Object.assign({}, this.model)
   },
   render (h) {
     const dataProps = {

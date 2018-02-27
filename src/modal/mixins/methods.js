@@ -14,6 +14,7 @@ export default {
       this.$refs.modal.active = false
       document.body.style.paddingRight = '0px'
       document.body.classList.remove('with-modal')
+      this.reset()
       this.$emit('close')
     },
     save () {
@@ -24,6 +25,12 @@ export default {
     },
     updateModel (value) {
       this.$emit('update:model', Object.assign({}, value))
+    },
+    reset () {
+      this.internalModel = Object.assign({}, this.internalModelBkp)
+    },
+    setModel (model) {
+      this.internalModel = Object.assign({}, model)
     }
   }
 }
