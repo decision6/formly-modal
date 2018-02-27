@@ -7,14 +7,14 @@ export default {
       this.$refs.modal.open()
       this.$refs.modal.active = true
       document.body.classList.add('with-modal')
-      this.$emit('app:open-modal')
+      this.$emit('formly-modal:open')
     },
     close () {
       this.$refs.modal.close()
       this.$refs.modal.active = false
       document.body.style.paddingRight = '0px'
       document.body.classList.remove('with-modal')
-      this.$emit('app:close-modal')
+      this.$emit('formly-modal:close')
     },
     save () {
       this.loading = true
