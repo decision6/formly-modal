@@ -5,11 +5,12 @@
   "author": "D6 Team <tecnologia@decision6.com>",
   "description": "A wrapper for Quasar Modal by using QFormly component",
   "scripts": {
-    "prepare": "npm run lint; rm -rf dist && npm run build",
-    "build": "npm run lint; webpack",
+    "build": "npm run lint; npm run clean; webpack",
+    "clean": "rm -rf dist",
     "docs:build": "cd docs; npm run build",
     "docs:deploy": "cd docs; npm run build; npm run deploy",
-    "lint": "eslint --ext .js,.vue src"
+    "lint": "eslint --ext .js,.vue src",
+    "prepare": "npm run lint; npm run clean; npm run build"
   },
   "license": "MIT",
   "peerDependencies": {
