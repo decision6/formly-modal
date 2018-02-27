@@ -1,6 +1,7 @@
 const webpack = require('webpack')
 const path = require('path')
 const version = require('./package.json').version
+const ExtractTextPlugin = require('extract-text-webpack-plugin')
 
 const banner = 'ModalForm v' + version + '\n' +
                '(c) 2017 Decision6 Team\n' +
@@ -21,7 +22,10 @@ const common = {
       },
       {
         test: /\.css$/,
-        loader: 'css-loader'
+        use: ExtractTextPlugin.extract({
+          fallback: "style-loader",
+          use: "css-loader"
+        })
       }
     ]
   },
@@ -33,7 +37,8 @@ const common = {
     }),
     new webpack.BannerPlugin({
       banner: banner
-    })
+    }),
+    new ExtractTextPlugin('formly-modal.css')
   ],
   resolve: {
     alias: {
