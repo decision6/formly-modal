@@ -29,8 +29,11 @@ export default {
     reset () {
       this.internalModel = Object.assign({}, this.internalModelBkp)
     },
-    setModel (model) {
+    setModel (model, isUpdateBkp = false) {
       this.internalModel = Object.assign({}, model)
+      if (isUpdateBkp) {
+        this.internalModelBkp = Object.assign({}, model)
+      }
     }
   }
 }

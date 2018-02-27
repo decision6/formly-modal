@@ -10,6 +10,11 @@ const FormlyWrapper = (h, context) => {
   }
 
   const formProps = {
+    style: {
+      border: 0,
+      padding: 0,
+      margin: 0
+    },
     props: {
       model: context.internalModel,
       fields: context.fields,

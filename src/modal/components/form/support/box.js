@@ -57,6 +57,11 @@ export default {
     }
 
     const formProps = {
+      style: {
+        border: 0,
+        padding: 0,
+        margin: 0
+      },
       props: {
         model: this.model,
         fields: this.fields,

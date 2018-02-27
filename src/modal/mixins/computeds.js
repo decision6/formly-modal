@@ -1,4 +1,4 @@
-import { isEmpty } from 'lodash'
+import { isEmpty, isEqual } from 'lodash'
 
 /**
  * @type Object
@@ -18,6 +18,7 @@ export default {
     contentCss () {
       return {
         'max-width': widthObjs[this.size],
+        'width': '100%',
         'min-height': `${this.height}px`
       }
     },
@@ -34,10 +35,13 @@ export default {
       return this.form.$valid
     },
     isDisable () {
-      return !this.isFormValid || this.isLoading
+      return !this.isFormValid || this.isLoading || this.isNotChange
     },
     isMulticolumns () {
       return !isEmpty(this.fieldsGroup)
+    },
+    isNotChange () {
+      return isEqual(this.internalModel, this.internalModelBkp)
     }
   }
 }
