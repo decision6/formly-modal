@@ -18,13 +18,13 @@
     "vue": "^2.5.0"
   },
   "dependencies": {
-    "@decision6/vue-formly-quasar": "^2.1.0",
+    "@decision6/vue-formly-quasar": "^2.1.1",
     "lodash": "^4.17.4"
   },
   "devDependencies": {
     "babel-core": "^6.26.0",
     "babel-eslint": "^8.2.2",
-    "babel-loader": "^7.1.2",
+    "babel-loader": "^7.1.3",
     "babel-plugin-syntax-object-rest-spread": "^6.13.0",
     "babel-plugin-transform-object-rest-spread": "^6.26.0",
     "babel-preset-env": "^1.6.1",
@@ -32,7 +32,7 @@
     "eslint": "^4.18.1",
     "eslint-config-standard": "^11.0.0",
     "eslint-friendly-formatter": "^3.0.0",
-    "eslint-loader": "^1.9.0",
+    "eslint-loader": "^2.0.0",
     "eslint-plugin-html": "^4.0.2",
     "eslint-plugin-import": "^2.9.0",
     "eslint-plugin-node": "^6.0.1",
