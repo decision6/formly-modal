@@ -74,3 +74,11 @@ If only field property is setted, the component will understand that there are o
 [See the example of the two uses](./docs/src/components/Modals/index.vue)
 
 [See the demo](http://labs.decision6.com/formly-modal)
+
+## Component Methods
+
+|  Method  |                 Signature                 |                      Description                      |
+|:--------:|:-----------------------------------------:|:-----------------------------------------------------:|
+|   open   |                 open () {}                | open modal and emit event                             |
+|   close  |                close () {}                | close modal and emit event                            |
+| setModel | setMethod (model, isUpdateBkp = false) {} | update internalModel and optionally, the model backup |
