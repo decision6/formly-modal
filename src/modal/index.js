@@ -23,7 +23,7 @@ export default {
       deep: true
     }
   },
-  mounted () {
+  created () {
     this.internalModel = Object.assign({}, this.model)
     this.internalModelBkp = Object.assign({}, this.model)
   },

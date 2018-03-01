@@ -9,7 +9,7 @@ const loadModel = (fields, model) => {
 
 const factoryChildren = curry((h, context, acc, child, index) => {
   const { title, color, fields } = child
-  const model = loadModel(fields, context.model)
+  const model = loadModel(fields, context.internalModel)
 
   const boxProps = {
     props: {

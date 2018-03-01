@@ -56,7 +56,7 @@ export default {
       this.$emit('update-model', Object.assign({}, model))
     }
   },
-  mounted () {
+  created () {
     this.emitForm(this.form)
     this.internalModel = Object.assign({}, this.model)
     this.$nextTick(() => {
