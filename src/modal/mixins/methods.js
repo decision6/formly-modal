@@ -17,6 +17,13 @@ export default {
       this.reset()
       this.$emit('close')
     },
+    onEscapeKey (event) {
+      this.$refs.modal.active = false
+      document.body.style.paddingRight = '0px'
+      document.body.classList.remove('with-modal')
+      this.reset()
+      this.$emit('close')
+    },
     save () {
       this.loading = true
       this.$emit('save', () => {
