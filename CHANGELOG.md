@@ -2,6 +2,10 @@
 
 All notable changes to this project will be documented in this file.
 
+## [1.3.0] - 2018-03-05
+- fix bundles with `externals` `webpack.config.js`
+- update `main` config on `package.json`
+
 ## [1.2.0] - 2018-03-02
 - added listener on escape-key event and emit close
 
