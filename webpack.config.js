@@ -56,6 +56,11 @@ module.exports = [
       library: 'FormlyModal',
       libraryTarget: 'umd'
     },
+    externals: {
+      vue: 'vue',
+      'quasar-framework': 'quasar-framework',
+      lodash: 'lodash'
+    },
     module: common.module,
     plugins: [
       ...common.plugins,
@@ -74,6 +79,11 @@ module.exports = [
       filename: 'formly-modal.min.js',
       library: 'FormlyModal',
       libraryTarget: 'umd'
+    },
+    externals: {
+      vue: 'vue',
+      'quasar-framework': 'quasar-framework',
+      lodash: 'lodash'
     },
     module: common.module,
     plugins: [

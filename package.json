@@ -1,7 +1,7 @@
 {
   "name": "@decision6/formly-modal",
-  "version": "1.2.0",
-  "main": "dist/formly-modal.js",
+  "version": "1.1.0",
+  "main": "dist/formly-modal.min.js",
   "author": "D6 Team <tecnologia@decision6.com>",
   "description": "A wrapper for Quasar Modal by using QFormly component",
   "scripts": {
