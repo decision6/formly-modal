@@ -1,8 +1,15 @@
 import Box from './support/box'
-import { curry } from 'lodash'
+import { curry, defaultsDeep, map, pick } from 'lodash'
+
+const loadModel = (fields, model) => {
+  const keys = map(fields, 'key')
+  const _model = pick(model, keys)
+  return _model
+}
 
 const factoryChildren = curry((h, context, acc, child, index) => {
   const { title, color, fields } = child
+  const model = loadModel(fields, context.internalModel)
 
   const boxProps = {
     props: {
@@ -10,11 +17,14 @@ const factoryChildren = curry((h, context, acc, child, index) => {
       title,
       child,
       fields,
-      model: context.model
+      model
     },
     on: {
       'update-form' (value) {
         context.formGroups.splice(index, 1, value)
+      },
+      'update-model' (value) {
+        context.internalModel = defaultsDeep({}, value, context.internalModel)
       }
     }
   }

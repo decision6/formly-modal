@@ -31,7 +31,8 @@ export default {
     }
   },
   data: () => ({
-    form: {}
+    form: {},
+    internalModel: {}
   }),
   watch: {
     form: {
@@ -39,15 +40,28 @@ export default {
         this.emitForm(value)
       },
       deep: true
+    },
+    internalModel: {
+      handler (value) {
+        this.emitModel(value)
+      },
+      deep: true
     }
   },
   methods: {
-    emitForm (value) {
-      this.$emit('update-form', Object.assign({}, value))
+    emitForm (form) {
+      this.$emit('update-form', Object.assign({}, form))
+    },
+    emitModel (model) {
+      this.$emit('update-model', Object.assign({}, model))
     }
   },
-  mounted () {
+  created () {
     this.emitForm(this.form)
+    this.internalModel = Object.assign({}, this.model)
+    this.$nextTick(() => {
+      this.emitModel(this.internalModel)
+    })
   },
   render (h) {
     const dataProps = {
@@ -63,7 +77,7 @@ export default {
         margin: 0
       },
       props: {
-        model: this.model,
+        model: this.internalModel,
         fields: this.fields,
         form: this.form
       }

@@ -23,7 +23,7 @@ export default {
       deep: true
     }
   },
-  mounted () {
+  created () {
     this.internalModel = Object.assign({}, this.model)
     this.internalModelBkp = Object.assign({}, this.model)
   },
@@ -35,6 +35,11 @@ export default {
       },
       props: {
         contentCss: this.contentCss
+      },
+      on: {
+        'escape-key': (event) => {
+          this.onEscapeKey(event)
+        }
       }
     }
 
