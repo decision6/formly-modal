@@ -4,6 +4,7 @@
       <q-toolbar color="indigo-10">
         <q-toolbar-title>
           ModalFormly Example
+          <span slot="subtitle">Quasar version: {{ $q.version }} - FormlyModal version: {{ libVersion }} </span>
         </q-toolbar-title>
       </q-toolbar>
     </q-layout-header>
@@ -25,8 +26,13 @@
 </template>
 
 <script>
+import pkg from '../../../package.json'
+
 export default {
-  name: 'LayoutDefault'
+  name: 'LayoutDefault',
+  data: () => ({
+    libVersion: pkg.version
+  })
 }
 </script>
 
