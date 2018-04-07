@@ -14,8 +14,8 @@
   },
   "license": "MIT",
   "peerDependencies": {
-    "quasar-framework": "^0.14.9",
-    "vue": "^2.5.0"
+    "quasar-framework": "^0.15.10",
+    "vue": "^2.5.16"
   },
   "dependencies": {
     "@decision6/vue-formly-quasar": "^3.0.0",
