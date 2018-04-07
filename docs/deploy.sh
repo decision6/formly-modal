@@ -23,7 +23,7 @@
 cd ../
 set -e
 GITURL=`git config remote.origin.url`
-cd docs/dist
+cd docs/dist/spa-mat
 rm -rf .git/
 git init
 git remote add origin $GITURL

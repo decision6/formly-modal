@@ -1,10 +1,8 @@
 {
-  "presets": ["env"],
-  "plugins": [
-    "transform-runtime",
-    "dynamic-import-webpack",
-    "syntax-object-rest-spread",
-    "transform-object-rest-spread"
+  "presets": [
+    [ "env", {"modules": false} ],
+    "stage-2"
   ],
+  "plugins": ["transform-runtime"],
   "comments": false
 }
