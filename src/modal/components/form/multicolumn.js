@@ -44,7 +44,7 @@ const MulticolumnWrapper = (h, context) => {
   const children = context.fieldsGroup.reduce(factoryChildren(h, context), [])
   const dataProps = {
     attrs: {
-      class: 'row xs-gutter'
+      class: 'row gutter-xs'
     }
   }
 

@@ -11,6 +11,7 @@ const TitleWrapper = (h, context) => {
       disable: context.isDisable
     },
     style: {
+      'margin-right': '4px',
       padding: '0 16px'
     },
     on: {
@@ -24,6 +25,7 @@ const TitleWrapper = (h, context) => {
       color: 'faded'
     },
     style: {
+      'margin-left': '4px',
       padding: '0 16px'
     },
     on: {

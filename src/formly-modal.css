@@ -49,3 +49,8 @@
     min-width: 100%;
   }
 }
+
+.formly-modal .q-field {
+  margin-top: 16px;
+  margin-bottom: 8px;
+}
