@@ -3,12 +3,12 @@
  */
 export default {
   methods: {
-    open () {
-      this.$refs.modal.show()
+    open (fn) {
+      this.$refs.modal.show(fn)
       this.$emit('open')
     },
-    close () {
-      this.$refs.modal.hide()
+    close (fn) {
+      this.$refs.modal.hide(fn)
       this.reset()
       this.$emit('close')
     },

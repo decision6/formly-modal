@@ -18,6 +18,7 @@ const LayoutWrapper = (h, context) => {
   return h(QModalLayout, layoutProps, [
     TitleWrapper(h, context),
     h('div', divProps, [
+      context.$slots['before-form'],
       FormlyWrapper(h, context),
       context.$slots.default
     ]),
