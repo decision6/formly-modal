@@ -2,6 +2,10 @@
 
 All notable changes to this project will be documented in this file.
 
+## [2.1.0] - 2018-04-26
+- added `before-form` slot
+- added fn param to open and close methods
+
 ## [2.0.0] - 2018-04-07
 - update to:
   - Quasar 0.15.x
