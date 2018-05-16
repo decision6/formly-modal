@@ -2,6 +2,9 @@
 
 All notable changes to this project will be documented in this file.
 
+## [2.2.0] - 2018-05-16
+- update component to accept col property on fieldsGroup
+
 ## [2.1.0] - 2018-04-26
 - added `before-form` slot
 - added fn param to open and close methods
