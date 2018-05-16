@@ -9,6 +9,7 @@ const loadModel = (fields, model) => {
 
 const factoryChildren = curry((h, context, acc, child, index) => {
   const { title, color, fields } = child
+  const col = child.col || 6
   const model = loadModel(fields, context.internalModel)
 
   const boxProps = {
@@ -17,7 +18,8 @@ const factoryChildren = curry((h, context, acc, child, index) => {
       title,
       child,
       fields,
-      model
+      model,
+      col
     },
     on: {
       'update-form' (value) {
@@ -31,7 +33,7 @@ const factoryChildren = curry((h, context, acc, child, index) => {
 
   const dataProps = {
     attrs: {
-      class: 'col-md-6'
+      class: `col-md-${col}`
     }
   }
 

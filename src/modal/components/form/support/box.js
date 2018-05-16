@@ -25,6 +25,10 @@ export default {
       type: Array,
       default: () => []
     },
+    col: {
+      type: Number,
+      default: 6
+    },
     model: {
       type: Object,
       default: () => ({})
