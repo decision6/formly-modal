@@ -2,6 +2,9 @@
 
 All notable changes to this project will be documented in this file.
 
+## [3.0.0] - 2018-06-27
+- uploading version to follow vue-formly-quasar (4.0.0)
+
 ## [2.2.0] - 2018-05-16
 - update component to accept col property on fieldsGroup
 
