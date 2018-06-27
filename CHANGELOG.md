@@ -2,6 +2,9 @@
 
 All notable changes to this project will be documented in this file.
 
+## [3.1.0] - 2018-06-27
+- fix externals config
+
 ## [3.0.0] - 2018-06-27
 - uploading version to follow vue-formly-quasar (4.0.0)
 
