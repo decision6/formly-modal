@@ -78,9 +78,9 @@
     lodash "^4.2.0"
     to-fast-properties "^2.0.0"
 
-"@decision6/vue-formly-quasar@^3.0.0":
-  version "3.1.0"
-  resolved "https://registry.yarnpkg.com/@decision6/vue-formly-quasar/-/vue-formly-quasar-3.1.0.tgz#342b3f14165e47fa7b7ef1818c054d7b40da44f9"
+"@decision6/vue-formly-quasar@^4.0.0":
+  version "4.0.0"
+  resolved "https://registry.yarnpkg.com/@decision6/vue-formly-quasar/-/vue-formly-quasar-4.0.0.tgz#ca0627659d9d8ac63164a71e2b8866454bcecf2f"
   dependencies:
     lodash "^4.17.10"
     ramda "^0.25.0"

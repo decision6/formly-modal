@@ -18,7 +18,7 @@
     "vue": "^2.5.16"
   },
   "dependencies": {
-    "@decision6/vue-formly-quasar": "^3.0.0",
+    "@decision6/vue-formly-quasar": "^4.0.0",
     "lodash": "^4.17.4"
   },
   "devDependencies": {
