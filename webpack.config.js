@@ -23,8 +23,8 @@ const common = {
       {
         test: /\.css$/,
         use: ExtractTextPlugin.extract({
-          fallback: "style-loader",
-          use: "css-loader"
+          fallback: 'style-loader',
+          use: 'css-loader'
         })
       }
     ]
@@ -58,7 +58,7 @@ module.exports = [
     },
     externals: {
       vue: 'vue',
-      quasar: 'quasar-framework',
+      quasar: 'quasar',
       lodash: 'lodash'
     },
     module: common.module,
@@ -82,7 +82,7 @@ module.exports = [
     },
     externals: {
       vue: 'vue',
-      quasar: 'quasar-framework',
+      quasar: 'quasar',
       lodash: 'lodash'
     },
     module: common.module,
