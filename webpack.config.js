@@ -58,7 +58,7 @@ module.exports = [
     },
     externals: {
       vue: 'vue',
-      'quasar-framework': 'quasar-framework',
+      quasar: 'quasar-framework',
       lodash: 'lodash'
     },
     module: common.module,
@@ -82,7 +82,7 @@ module.exports = [
     },
     externals: {
       vue: 'vue',
-      'quasar-framework': 'quasar-framework',
+      quasar: 'quasar-framework',
       lodash: 'lodash'
     },
     module: common.module,

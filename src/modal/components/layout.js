@@ -1,4 +1,4 @@
-import { QModalLayout } from 'quasar-framework'
+import { QModalLayout } from 'quasar'
 import TitleWrapper from './title'
 import FooterWrapper from './footer'
 import FormlyWrapper from './form'

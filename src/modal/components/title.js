@@ -1,4 +1,4 @@
-import { QToolbar, QToolbarTitle, QBtn, QIcon } from 'quasar-framework'
+import { QToolbar, QToolbarTitle, QBtn, QIcon } from 'quasar'
 
 const TitleWrapper = (h, context) => {
   const toolbarProps = {

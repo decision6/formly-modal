@@ -1,4 +1,4 @@
-import { QModal } from 'quasar-framework'
+import { QModal } from 'quasar'
 import LayoutWrapper from './layout'
 
 const WrapperModal = (h, dataProps, context) => {

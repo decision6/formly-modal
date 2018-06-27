@@ -1,4 +1,4 @@
-import { QInnerLoading, QSpinnerDots } from 'quasar-framework'
+import { QInnerLoading, QSpinnerDots } from 'quasar'
 import Formly from './support/formly'
 import MulticolumnWrapper from './multicolumn'
 
