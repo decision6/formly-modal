@@ -2,6 +2,11 @@
 
 All notable changes to this project will be documented in this file.
 
+## [4.0.0] - 2018-08-08
+- update to:
+  - Quasar 0.17.7
+  - Vue 2.5.17
+
 ## [3.2.0] - 2018-06-27
 - uploading version to follow vue-formly-quasar (4.1.0)
 
