@@ -14,36 +14,36 @@
   },
   "license": "MIT",
   "peerDependencies": {
-    "quasar-framework": "^0.15.10",
-    "vue": "^2.5.16"
+    "quasar-framework": "^0.17.7",
+    "vue": "^2.5.17"
   },
   "dependencies": {
-    "@decision6/vue-formly-quasar": "^4.1.0",
+    "@decision6/vue-formly-quasar": "^5.0.0",
     "lodash": "^4.17.4"
   },
   "devDependencies": {
     "babel-core": "^6.26.3",
-    "babel-eslint": "^8.2.5",
-    "babel-loader": "^7.1.4",
+    "babel-eslint": "^8.2.6",
+    "babel-loader": "^7.1.5",
     "babel-plugin-syntax-object-rest-spread": "^6.13.0",
     "babel-plugin-transform-object-rest-spread": "^6.26.0",
     "babel-preset-env": "^1.7.0",
-    "css-loader": "^0.28.11",
-    "eslint": "^5.0.1",
+    "css-loader": "^1.0.0",
+    "eslint": "^5.3.0",
     "eslint-config-standard": "^11.0.0",
     "eslint-friendly-formatter": "^4.0.1",
-    "eslint-loader": "^2.0.0",
+    "eslint-loader": "^2.1.0",
     "eslint-plugin-html": "^4.0.5",
     "eslint-plugin-import": "^2.13.0",
-    "eslint-plugin-node": "^6.0.1",
+    "eslint-plugin-node": "^7.0.1",
     "eslint-plugin-promise": "^3.8.0",
     "eslint-plugin-standard": "^3.1.0",
     "extract-text-webpack-plugin": "^3.0.2",
-    "quasar-framework": "^0.16.0",
-    "style-loader": "^0.21.0",
-    "vue": "^2.5.16",
-    "vue-loader": "^15.2.4",
-    "vue-template-compiler": "^2.5.16",
+    "quasar-framework": "^0.17.7",
+    "style-loader": "^0.22.1",
+    "vue": "^2.5.17",
+    "vue-loader": "^15.3.0",
+    "vue-template-compiler": "^2.5.17",
     "webpack": "^3.5.6"
   }
 }
